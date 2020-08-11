@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+# micronucleus bootloader
+MN_VERSION=2.04
+make -C bl
+cp bl/work/micronucleus-${MN_VERSION}/firmware/main.hex ${DAPPER_OUTPUT}/micronucleus-${MN_VERSION}.hex
+ls -la ${DAPPER_OUTPUT}/micronucleus-${MN_VERSION}.hex
+
+# classic firmware
+make -C fw
+cp fw/main.hex ${DAPPER_OUTPUT}/beeon-classic.hex
+ls -al ${DAPPER_OUTPUT}/beeon-classic.hex
+
+## firmware serial number patcher
+make -C sn
+cp sn/bin/* ${DAPPER_OUTPUT}/
+ls -la ${DAPPER_OUTPUT}/*beeon-sn*

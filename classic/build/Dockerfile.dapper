@@ -1,0 +1,9 @@
+FROM golang:alpine3.12
+RUN apk --update add make git bash gcc-avr avr-libc
+
+ENV DAPPER_SOURCE /source
+ENV DAPPER_OUTPUT ./build/bin
+WORKDIR ${DAPPER_SOURCE}
+
+ENTRYPOINT ["./build/scripts/entry"]
+CMD ["beeon"]
