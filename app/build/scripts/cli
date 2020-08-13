@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+## multi-platform cli build
+make cli
+cp bin/*cli* ${DAPPER_OUTPUT}/
+ls -la ${DAPPER_OUTPUT}/*cli*

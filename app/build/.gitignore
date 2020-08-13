@@ -1,0 +1,3 @@
+Dockerfile.dapper[0-9]*
+.dapper
+bin/
