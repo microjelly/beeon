@@ -7,11 +7,9 @@ import (
 	"os"
 	"strings"
 
-	"microjelly.com/beeon/app/pkg/device/keycodes"
-
-	"microjelly.com/beeon/app/pkg/device/report3"
-
 	"microjelly.com/beeon/app/pkg/device"
+	"microjelly.com/beeon/app/pkg/device/keycodes"
+	"microjelly.com/beeon/app/pkg/device/report3"
 )
 
 var (
@@ -32,7 +30,7 @@ func main() {
 		newMode      report3.Mode      = report3.ModeUnset
 		inMouseMode  string            = ""
 		newMouseMode report3.MouseMode = report3.MouseModeUnset
-		inKeyCode    uint              = 255
+		inKeyCode    uint              = 256
 		newKeyCode   keycodes.KeyCode  = keycodes.KeyUnset
 	)
 
@@ -142,12 +140,13 @@ func main() {
 	}
 
 	if action == "none" {
-		//flag.PrintDefaults()
+		flag.PrintDefaults()
 		os.Exit(1)
 	}
 
 	if action == "write" {
 		hasChange := false
+		whatChanged := []string{}
 		r3, err := device.ReadReport3(vendorID, productID, serialNumber)
 		if err != nil {
 			log.Printf(err.Error())
@@ -155,6 +154,7 @@ func main() {
 		}
 
 		if (newMode != report3.ModeUnset) && (r3.Mode != newMode) {
+			whatChanged = append(whatChanged, fmt.Sprintf("Mode(%s>%s)", r3.Mode, newMode))
 			r3.Mode = newMode
 			hasChange = true
 		} else {
@@ -162,6 +162,7 @@ func main() {
 		}
 
 		if newKeyCode != keycodes.KeyUnset && (newKeyCode != r3.KeyCode) {
+			whatChanged = append(whatChanged, fmt.Sprintf("KeyCode(%s>%s)", r3.KeyCode, newKeyCode))
 			r3.KeyCode = newKeyCode
 			hasChange = true
 		} else {
@@ -169,6 +170,7 @@ func main() {
 		}
 
 		if newMouseMode != report3.MouseModeUnset && (newMouseMode != r3.MouseMode) {
+			whatChanged = append(whatChanged, fmt.Sprintf("MouseMode(%s>%s)", r3.MouseMode, newMouseMode))
 			r3.MouseMode = newMouseMode
 			hasChange = true
 		} else {
@@ -176,6 +178,7 @@ func main() {
 		}
 
 		if newState != report3.StateUnset && (newState != r3.State) {
+			whatChanged = append(whatChanged, fmt.Sprintf("State(%s>%s)", r3.State, newState))
 			r3.State = newState
 			hasChange = true
 		} else {
@@ -183,6 +186,7 @@ func main() {
 		}
 
 		if newRate != report3.RateUnset && (newRate != r3.Rate) {
+			whatChanged = append(whatChanged, fmt.Sprintf("Rate(%s>%s)", r3.Rate, newRate))
 			r3.Rate = newRate
 			hasChange = true
 		} else {
@@ -195,7 +199,7 @@ func main() {
 				log.Printf(err.Error())
 				os.Exit(1)
 			}
-			log.Printf("changes made")
+			log.Printf("changes made {%s}", strings.Join(whatChanged, "; "))
 		} else {
 			log.Printf("no changes")
 		}
