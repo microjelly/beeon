@@ -4,8 +4,8 @@ import (
 	"errors"
 	"log"
 
+	"github.com/microjelly/hid"
 	"microjelly.com/beeon/app/pkg/device/report3"
-	"t0ddz.com/go/hid"
 )
 
 var (

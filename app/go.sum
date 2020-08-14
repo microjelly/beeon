@@ -1,2 +1,2 @@
-t0ddz.com/go/hid v0.0.0-20200813191819-54ebaf6fe00a h1:xFVOyOVukEO4OXO2EG322BvbSO6OWcgjJuPYAeiCq24=
-t0ddz.com/go/hid v0.0.0-20200813191819-54ebaf6fe00a/go.mod h1:38GKzWuD8883DupGUgw6l9Q46xhOhx+0EBS/VTT83WA=
+github.com/microjelly/hid v0.0.0-20200814141453-3602713b3885 h1:UdpWecEd/pxs7YgX+gYnROdB4ID6oKIuv2GnVhhXofk=
+github.com/microjelly/hid v0.0.0-20200814141453-3602713b3885/go.mod h1:bPSrfoMz72p90YvMJSC/hCd0xL7MebXTyM8oWhtsgu8=

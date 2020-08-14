@@ -1,6 +1,6 @@
 FROM dockercore/golang-cross:latest
-RUN apt-get update -qq && apt-get install -y -q --no-install-recommends \
-    libusb-1.0-0-dev
+RUN apt-get update -qq \
+      && apt-get install -y -q --no-install-recommends libusb-1.0-0-dev
 
 ENV DAPPER_SOURCE /source
 ENV DAPPER_OUTPUT ./build/bin

@@ -1,0 +1,101 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 8/24/2014 12:22:47 PM
+
+BeginCmp
+TimeStamp = /53F78D86;
+Reference = C1;
+ValeurCmp = 10uF;
+IdModule  = SM1206POL;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78E1D;
+Reference = C2;
+ValeurCmp = .1uF;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78DE2;
+Reference = C3;
+ValeurCmp = .01uF;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78E77;
+Reference = C4;
+ValeurCmp = 1uF;
+IdModule  = SM1206POL;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78DB1;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78CDD;
+Reference = J1;
+ValeurCmp = ISP;
+IdModule  = TRUDEAU_ISP_SMD_CLASSIC;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78CBD;
+Reference = J2;
+ValeurCmp = USB;
+IdModule  = TRUDEAU-USB-A-SMT-MALE;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78DA1;
+Reference = R1;
+ValeurCmp = 47;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78FA7;
+Reference = R2;
+ValeurCmp = 1K5;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78FA1;
+Reference = R3;
+ValeurCmp = 68;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78F69;
+Reference = R4;
+ValeurCmp = 68;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78CF3;
+Reference = SW1;
+ValeurCmp = ESWITCH;
+IdModule  = TRUDEAU-E-SWITCH;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78C6C;
+Reference = U1;
+ValeurCmp = ATTINY85;
+IdModule  = TRUDEAU-SOIC8-WIDE;
+EndCmp
+
+BeginCmp
+TimeStamp = /53F78C7B;
+Reference = U2;
+ValeurCmp = LDO;
+IdModule  = TRUDEAU-SOT23-5;
+EndCmp
+
+EndListe
