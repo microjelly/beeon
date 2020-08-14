@@ -1,15 +1,16 @@
-[finished-product-image]: classic-v1.jpg "BEEON - Classic; v1"
-[pcb-top-image]: classic-v1-top.png "BEEON - Classic; v1; pcb-top"
-[pcb-bottom-image]: classic-v1-bottom.png "BEEON - Classic; v1; pcb-bottom"
+[finished-product-image]: v1/img/classic-v1.jpg "BEEON - Classic; v1"
+[pcb-top-image]: v1/img/classic-v1-top.png "BEEON - Classic; v1; pcb-top"
+[pcb-bottom-image]: v1/img/classic-v1-bottom.png "BEEON - Classic; v1; pcb-bottom"
 
-# classic v1 hardware
+# classic hardware
+
 ## Overview
-A brief overview of why have a classic version
+A brief overview of why we ave a classic version
 
 ## BOM
 Some words aboutthe current bom
 | Reference(s) | Package  | Description                    | Manufacturer      | Part Number        | Cost  |
-| ------------ | -------- | ------------------------------ | ----------------- | ------------------ | ----- |
+| ------------ | -------: | ------------------------------ | ----------------- | -----------------: | ----: |
 | SW1          |          | Switch                         | E-Switch          | *TL1014BF180QG     | $#.## |
 | D1           | 1206     | LED                            | OSRAM Opto        | *LG N971-KN-1      | $#.## |
 | J1           |          | 6 PIN 2.54mm (Optional Header) | Harwin            | M20-7820646        | $0.95 |
@@ -28,9 +29,10 @@ Some words aboutthe current bom
 *obsolete part (need to find replacement)
 
 ## PCB
-Some quick words abou the pcb [`Order from OSH Park`](https://oshpark.com/shared_projects/amtuUCdw)
-| ![alt text][pcb-top-image] ![alt text][pcb-bottom-image] | 
-| -------------------------------------------------------- |
+Some quick words about the pcb
+| ![alt text][pcb-top-image] ![alt text][pcb-bottom-image]              | 
+| --------------------------------------------------------------------: |
+| [`Order from OSH Park`](https://oshpark.com/shared_projects/amtuUCdw) |
 
 ## Finished Product
 Some quick words about the finished product
