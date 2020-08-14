@@ -24,13 +24,13 @@ Some words aboutthe current bom
 | C2           | 1206     | 0.1uF 10v MLCC Capacitor       | Vishay/Vitramon   | VJ1206Y104KXQPW1BC | $0.29 |
 | C3           | 1206     | 0.01uF 10v MLCC Capacitor      | Vishay/Vitramon   | VJ1206Y103KXJCW1BC | $0.25 |
 | C4           | 1206     | 1uF 16v Tantalum Capacitor     | AVX               | F931C105KAA        | $0.51 |
+
 *obsolete part (need to find replacement)
 
 ## PCB
-Some quick words abou te pcb
-| [`Order from OSH Park`](https://oshpark.com/shared_projects/amtuUCdw) |
-| --------------------------------------------------------------------: |
-| ![alt text][pcb-top-image] ![alt text][pcb-bottom-image]              | 
+Some quick words abou the pcb [`Order from OSH Park`](https://oshpark.com/shared_projects/amtuUCdw)
+| ![alt text][pcb-top-image] ![alt text][pcb-bottom-image] | 
+| -------------------------------------------------------- |
 
 ## Finished Product
 Some quick words about the finished product
