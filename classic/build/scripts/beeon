@@ -8,8 +8,8 @@ cp bl/work/micronucleus-${MN_VERSION}/firmware/main.hex ${DAPPER_OUTPUT}/beeon-c
 ls -la ${DAPPER_OUTPUT}/beeon-classic-v1-micronucleus-${MN_VERSION}.hex
 
 # classic v1 firmware
-make -C fw/v1
-cp fw/v1/main.hex ${DAPPER_OUTPUT}/beeon-classic-v1.hex
+make -C fw
+cp fw/main.hex ${DAPPER_OUTPUT}/beeon-classic-v1.hex
 ls -al ${DAPPER_OUTPUT}/beeon-classic-v1.hex
 
 ## firmware serial number patcher

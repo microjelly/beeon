@@ -1,6 +1,6 @@
-[finished-product-image]: hw/v1/img/classic-v1.jpg "BEEON - Classic; v1"
-[pcb-top-image]: hw/v1/img/classic-v1-top.png "BEEON - Classic; v1; pcb-top"
-[pcb-bottom-image]: hw/v1/img/classic-v1-bottom.png "BEEON - Classic; v1; pcb-bottom"
+[finished-product-image]: hw/img/classic-v1.jpg "BEEON - Classic; v1"
+[pcb-top-image]: hw/img/classic-v1-top.png "BEEON - Classic; v1; pcb-top"
+[pcb-bottom-image]: hw/img/classic-v1-bottom.png "BEEON - Classic; v1; pcb-bottom"
 
 # classic hardware
 
@@ -19,12 +19,11 @@ The firmware makes use of the outstanding V-USB software-only implementation of 
 ## Bootloader
 Micronucleus is the bootloader that is currently in use by the beeon-classic devices. You will need a copy of the commandline tool for your operating system inorder to upload new firmware onto the device. v2.04 is the version that we are currently using.
   
-`Micronucleus ` is released under the [GPLv2](https://github.com/micronucleus/micronucleus/blob/master/License.txt) license.
-
 | OS | Link |
 | -- | -- |
 | Windows | [Download](https://github.com/micronucleus/micronucleus/raw/master/commandline/micronucleus.exe) |
 | Linux/Darwin | [Build](https://github.com/micronucleus/micronucleus/tree/master/commandline) |
+`Micronucleus` is released under the [GPLv2](https://github.com/micronucleus/micronucleus/blob/master/License.txt) license.
 
 ---
 ## BOM
