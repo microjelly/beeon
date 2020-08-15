@@ -5,7 +5,7 @@ The classic device was created several years ago to fill a single need, preventi
 
 ## classic notes
 ### flash bootloader to board
-`avrdude -c USBasp -p attiny85 -U flash:w:micronucleus-2.04.hex:i -B 10`  
+`avrdude -c USBasp -p attiny85 -U flash:w:beeon-classic-v1-micronucleus-2.04.hex:i -B 10`  
 `avrdude -c USBasp -p attiny85 -U lfuse:w:0xe1:m -U hfuse:w:0xdd:m -U efuse:w:0xfe:m`  
 ### upload new firmware onto board
 `micronucleus --run {firmware.hex}`
@@ -13,6 +13,6 @@ The classic device was created several years ago to fill a single need, preventi
 `micronucleus --erase-only`
 ### upload firmware with random serial number
 *first create random serial number file*  
-`beeon-sn -mk -mk-p=Z-ZZ > beeon-sn.txt`  
-`beeon-sn | micronucleus --run -`  
+`beeon-classic-sn -mk -mk-p=Z-ZZ > beeon-sn.txt`  
+`beeon-classic-sn | micronucleus --run -`  
 

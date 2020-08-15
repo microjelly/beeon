@@ -1,4 +1,4 @@
-package sn
+package main
 
 import (
 	"bytes"
